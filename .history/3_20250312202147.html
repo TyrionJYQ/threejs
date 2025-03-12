@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link type="text/css" rel="stylesheet" href="./public.css" />
+    <link type="text/css" rel="stylesheet" href="./navigation.css" />
 </head>
 
 <body>
@@ -300,10 +301,10 @@ renderer<span class="token punctuation">.</span><span class="token function">set
             the render:</p>
         <div class="code-toolbar">
             <pre contenteditable=""
-                class=" language-javascript"><code spellcheck="false" class=" language-javascript"><span class="token keyword">const</span> camera <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">THREE<span class="token punctuation">.</span>PerspectiveCamera</span><span class="token punctuation">(</span><span class="token number">75</span><span class="token punctuation">,</span> sizes<span class="token punctuation">.</span>width <span class="token operator">/</span> sizes<span class="token punctuation">.</span>height<span class="token punctuation">)</span>
-                class=" language-javascript"><code spellcheck="false" class=" language-javascript"><span class="token keyword">const</span> camera <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">THREE<span class="token punctuation">.</span>PerspectiveCamera</span><span class="token punctuation">(</span><span class="token number">75</span><span class="token punctuation">,</span> sizes<span class="token punctuation">.</span>width <span class="token operator">/</span> sizes<span class="token punctuation">.</span>height<span class="token punctuation">)</span>
-camera<span class="token punctuation">.</span>position<span class="token punctuation">.</span>z < span class="token operator">=</span> <span class="token number">3</span>
-scene<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>camera<span class="token punctuation">)</span></code></pre>
+                class=" language-javascript"><code spellcheck="false" class=" language-javascript">const camera = new THREE.PerspectiveCamera(75, sizes.width / sizes.height)
+camera.position.z = 3
+scene.add(camera)
+        </div>
         <p class="is-image"><span class="image-inner"><img data-src="./assets/lessons/03/step-02.png"
                     src="./assets/lessons/03/step-02.png"
                     width="1792" height="1120" alt="./assets/lessons/03/step-02.png"></span></p>
@@ -318,3 +319,4 @@ scene<span class="token punctuation">.</span><span class="token function">add</s
 </body>
 
 </html>
+<script src="./navigation.js"></script>
