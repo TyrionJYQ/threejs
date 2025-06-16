@@ -33,7 +33,7 @@
         <p>And a simple <code spellcheck="false">script.js</code> file:</p>
         <div class="code-toolbar">
             <pre contenteditable=""
-                class=" language-javascript"><code spellcheck="false" class=" language-javascript">console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Hello Three.js'</span><span class="token punctuation">)</span></code></pre>
+                class="language-javascript"><code spellcheck="false" class="language-javascript">console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Hello Three.js'</span><span class="token punctuation">)</span></code></pre>
         </div>
         <p>Open the <code spellcheck="false">index.html</code> in your browser. To do that, you can try to double click
             on the file. If it doesn't work or it opens with the wrong browser, you can drag and drop the file onto the
@@ -51,7 +51,8 @@
                 spellcheck="false">&lt;script&gt;</code>.</p>
         <p>Go to <a target="_blank" href="https://threejs.org/">https://threejs.org/</a> and click on the
             <strong>download</strong> button to download a zip file and unzip it. The file is quite heavy, but don't
-            worry, we only need one file from it.</p>
+            worry, we only need one file from it.
+        </p>
         <p>You should get a folder that looks like this:</p>
         <p class="is-image"><span class="image-inner"><img data-src="./assets/lessons/03/image-1.png"
                     src="./assets/lessons/03/image-1.png" width="408" height="266" alt="./assets/lessons/03/image-1.png"
@@ -83,7 +84,7 @@
             inside:</p>
         <div class="code-toolbar">
             <pre contenteditable=""
-                class=" language-javascript"><code spellcheck="false" class=" language-javascript">console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token constant">THREE</span><span class="token punctuation">)</span></code></pre>
+                class="language-javascript"><code spellcheck="false" class="language-javascript">console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token constant">THREE</span><span class="token punctuation">)</span></code></pre>
         </div>
         <p>The <code spellcheck="false">THREE</code> variable contains most of the classes and properties you might need
             on a classic Three.js project. Unfortunately, not all classes are inside this variable, but we will see
@@ -109,7 +110,7 @@
                 href="https://threejs.org/docs/index.html#api/en/scenes/Scene">Scene</a> class:</p>
         <div class="code-toolbar">
             <pre contenteditable=""
-                class=" language-javascript"><code spellcheck="false" class=" language-javascript"><span class="token comment">// Scene</span>
+                class="language-javascript"><code spellcheck="false" class="language-javascript"><span class="token comment">// Scene</span>
 <span class="token keyword">const</span> scene <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">THREE<span class="token punctuation">.</span>Scene</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre>
         </div>
         <h4>Objects</h4>
@@ -129,7 +130,7 @@
             first 3 parameters that correspond to the box's size.</p>
         <div class="code-toolbar">
             <pre contenteditable=""
-                class=" language-javascript"><code spellcheck="false" class=" language-javascript"><span class="token comment">// Object</span>
+                class="language-javascript"><code spellcheck="false" class="language-javascript"><span class="token comment">// Object</span>
 <span class="token keyword">const</span> geometry <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">THREE<span class="token punctuation">.</span>BoxGeometry</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span></code></pre>
 
         </div>
@@ -145,7 +146,7 @@
             later.</p>
         <div class="code-toolbar">
             <pre contenteditable=""
-                class=" language-javascript"><code spellcheck="false" class=" language-javascript"><span class="token comment">// Object</span>
+                class="language-javascript"><code spellcheck="false" class="language-javascript"><span class="token comment">// Object</span>
 <span class="token keyword">const</span> geometry <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">THREE<span class="token punctuation">.</span>BoxGeometry</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span>
 <span class="token keyword">const</span> material <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">THREE<span class="token punctuation">.</span>MeshBasicMaterial</span><span class="token punctuation">(</span><span class="token punctuation">{</span> color<span class="token operator">:</span> <span class="token number">0xff0000</span> <span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre>
 
@@ -155,7 +156,7 @@
                 spellcheck="false">geometry</code> and the <code spellcheck="false">material</code> as parameters.</p>
         <div class="code-toolbar">
             <pre contenteditable=""
-                class=" language-javascript"><code spellcheck="false" class=" language-javascript"><span class="token comment">// Object</span>
+                class="language-javascript"><code spellcheck="false" class="language-javascript"><span class="token comment">// Object</span>
 <span class="token keyword">const</span> geometry <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">THREE<span class="token punctuation">.</span>BoxGeometry</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span>
 <span class="token keyword">const</span> material <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">THREE<span class="token punctuation">.</span>MeshBasicMaterial</span><span class="token punctuation">(</span><span class="token punctuation">{</span> color<span class="token operator">:</span> <span class="token number">0xff0000</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
 <span class="token keyword">const</span> mesh <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">THREE<span class="token punctuation">.</span>Mesh</span><span class="token punctuation">(</span>geometry<span class="token punctuation">,</span> material<span class="token punctuation">)</span></code></pre>
@@ -164,7 +165,7 @@
         <p>You can now add your mesh to the scene by using the <code spellcheck="false">add(...)</code> method:</p>
         <div class="code-toolbar">
             <pre contenteditable=""
-                class=" language-javascript"><code spellcheck="false" class=" language-javascript">scene<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>mesh<span class="token punctuation">)</span></code></pre>
+                class="language-javascript"><code spellcheck="false" class="language-javascript">scene<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>mesh<span class="token punctuation">)</span></code></pre>
 
         </div>
         <p>If you don't add an object to the scene, you won't be able to see it.</p>
@@ -224,7 +225,7 @@
             but it might result in bugs later:</p>
         <div class="code-toolbar">
             <pre contenteditable=""
-                class=" language-javascript"><code spellcheck="false" class=" language-javascript"><span class="token comment">// Sizes</span>
+                class="language-javascript"><code spellcheck="false" class="language-javascript"><span class="token comment">// Sizes</span>
 <span class="token keyword">const</span> sizes <span class="token operator">=</span> <span class="token punctuation">{</span>
 width<span class="token operator">:</span> <span class="token number">800</span><span class="token punctuation">,</span>
 height<span class="token operator">:</span> <span class="token number">600</span>
@@ -261,7 +262,7 @@ scene<span class="token punctuation">.</span><span class="token function">add</s
                 spellcheck="false">&lt;canvas&gt;</code> accordingly:</p>
         <div class="code-toolbar">
             <pre contenteditable=""
-                class=" language-javascript"><code spellcheck="false" class=" language-javascript"><span class="token comment">// Canvas</span>
+                class="language-javascript"><code spellcheck="false" class="language-javascript"><span class="token comment">// Canvas</span>
 <span class="token keyword">const</span> canvas <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'canvas.webgl'</span><span class="token punctuation">)</span>
 
 <span class="token comment">// ...</span>
@@ -274,15 +275,15 @@ renderer<span class="token punctuation">.</span><span class="token function">set
         </div>
         <p>If you refresh the page, you should see a black canvas of 800px width and 600px large.</p>
         <p class="is-image"><span class="image-inner"><img data-src="./assets/lessons/03/step-01.png"
-                    src="./assets/lessons/03/step-01.png"
-                    width="1792" height="1120" alt="./assets/lessons/03/step-01.png"></span></p>
+                    src="./assets/lessons/03/step-01.png" width="1792" height="1120"
+                    alt="./assets/lessons/03/step-01.png"></span></p>
         <h2>First render</h2>
         <p>It's time to work on our first render. Call the <code spellcheck="false">render(...)</code> method on the
             renderer and send it the <code spellcheck="false">scene</code> and the <code
                 spellcheck="false">camera</code> as parameters:</p>
         <div class="code-toolbar">
             <pre contenteditable=""
-                class=" language-javascript"><code spellcheck="false" class=" language-javascript">renderer<span class="token punctuation">.</span><span class="token function">render</span><span class="token punctuation">(</span>scene<span class="token punctuation">,</span> camera<span class="token punctuation">)</span></code></pre>
+                class="language-javascript"><code spellcheck="false" class="language-javascript">renderer<span class="token punctuation">.</span><span class="token function">render</span><span class="token punctuation">(</span>scene<span class="token punctuation">,</span> camera<span class="token punctuation">)</span></code></pre>
         </div>
         <p>Still nothing? Here's the issue: we haven't specified our object's position, nor our camera's. Both are in
             the default position, which is the center of the scene and we can't see an object from its inside (by
@@ -299,20 +300,19 @@ renderer<span class="token punctuation">.</span><span class="token function">set
             once you've created the <code spellcheck="false">camera</code> variable, yet it has to happen before you do
             the render:</p>
         <div class="code-toolbar">
-            <pre contenteditable=""
-                class=" language-javascript"><code spellcheck="false" class=" language-javascript"><span class="token keyword">const</span> camera <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">THREE<span class="token punctuation">.</span>PerspectiveCamera</span><span class="token punctuation">(</span><span class="token number">75</span><span class="token punctuation">,</span> sizes<span class="token punctuation">.</span>width <span class="token operator">/</span> sizes<span class="token punctuation">.</span>height<span class="token punctuation">)</span>
-                class=" language-javascript"><code spellcheck="false" class=" language-javascript"><span class="token keyword">const</span> camera <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">THREE<span class="token punctuation">.</span>PerspectiveCamera</span><span class="token punctuation">(</span><span class="token number">75</span><span class="token punctuation">,</span> sizes<span class="token punctuation">.</span>width <span class="token operator">/</span> sizes<span class="token punctuation">.</span>height<span class="token punctuation">)</span>
-camera<span class="token punctuation">.</span>position<span class="token punctuation">.</span>z < span class="token operator">=</span> <span class="token number">3</span>
+            <pre contenteditable="" class="language-javascript"><code spellcheck="false" class="language-javascript"><span class="token keyword">const</span> camera <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">THREE<span class="token punctuation">.</span>PerspectiveCamera</span><span class="token punctuation">(</span><span class="token number">75</span><span class="token punctuation">,</span> sizes<span class="token punctuation">.</span>width <span class="token operator">/</span> sizes<span class="token punctuation">.</span>height<span class="token punctuation">)</span>
+camera<span class="token punctuation">.</span>position<span class="token punctuation">.</span>z <span class="token operator">=</span> <span class="token number">3</span>
 scene<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>camera<span class="token punctuation">)</span></code></pre>
-        <p class="is-image"><span class="image-inner"><img data-src="./assets/lessons/03/step-02.png"
-                    src="./assets/lessons/03/step-02.png"
-                    width="1792" height="1120" alt="./assets/lessons/03/step-02.png"></span></p>
-        <p>Congratulations, you should see your first render. It looks like a square, and that's because the camera
-            aligns perfectly with the cube, and you can see only one side of it.</p>
-        <p>Don't worry about the render's size; we'll learn how to make the canvas fit the viewport later.</p>
-        <p>In the next lessons, you will learn more about the <code spellcheck="false">position</code>, <code
-                spellcheck="false">rotation</code> and <code spellcheck="false">scale</code> properties, how to change
-            them, and animate the scene.</p>
+            <p class="is-image"><span class="image-inner"><img data-src="./assets/lessons/03/step-02.png"
+                        src="./assets/lessons/03/step-02.png" width="1792" height="1120"
+                        alt="./assets/lessons/03/step-02.png"></span></p>
+            <p>Congratulations, you should see your first render. It looks like a square, and that's because the camera
+                aligns perfectly with the cube, and you can see only one side of it.</p>
+            <p>Don't worry about the render's size; we'll learn how to make the canvas fit the viewport later.</p>
+            <p>In the next lessons, you will learn more about the <code spellcheck="false">position</code>, <code
+                    spellcheck="false">rotation</code> and <code spellcheck="false">scale</code> properties, how to
+                change
+                them, and animate the scene.</p>
     </section>
 
 </body>
